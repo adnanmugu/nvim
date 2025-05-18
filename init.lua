@@ -29,6 +29,17 @@ require("core.keymaps")
 require("core.autocommands")
 require("core.usercommands")
 
+local opts = {
+	checker = {
+		enabled = false,
+	},
+  -- disable detection when there is a changes
+	change_detection = {
+		enabled = false,
+		notify = false
+	}
+}
+
 require("lazy").setup(
-	{ { import = "plugins" }, { import = "plugins.lsp" } }, opts )
+  { { import = "plugins" }, { import = "plugins.lsp" } }, opts )
 require("utils")
