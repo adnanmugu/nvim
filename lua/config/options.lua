@@ -1,6 +1,6 @@
 local opt = vim.opt
 
-opt.guicursor = { "a:blinkwait700-blinkoff400-blinkon250" }
+opt.guicursor = { "a:blinkoff700-blinkwait400-blinkon250,i-v:hor20-blinkon250" }
 -- opt.cursorline = true  -- highlight the current line
 opt.compatible = false -- cisable compatibility with old vi
 
